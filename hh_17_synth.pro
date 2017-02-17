@@ -1,4 +1,4 @@
-update=Sat Feb 11 22:06:30 2017
+update=Thu Feb 16 23:21:06 2017
 version=1
 last_client=kicad
 [pcbnew]
@@ -119,3 +119,4 @@ LibName87=ttl_ieee
 LibName88=video
 LibName89=wiznet
 LibName90=zetex
+LibName91=lib/JACK_TRS
