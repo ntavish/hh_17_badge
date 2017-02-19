@@ -1,4 +1,4 @@
-update=Sun Feb 19 00:53:48 2017
+update=Sun Feb 19 18:03:17 2017
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=lib;/home/tavish/kicad_sources/kicad-library/library;/home/tavish/repos/ArduTouch/Eagle/kicad
+LibDir=lib;/home/tavish/kicad_sources/kicad-library/library
 [eeschema/libraries]
 LibName1=hh_17_synth-rescue
 LibName2=power
@@ -121,4 +121,3 @@ LibName89=wiznet
 LibName90=zetex
 LibName91=lib/JACK_TRS
 LibName92=/home/tavish/repos/ArduTouch/kicad_convert/ArduTouch_stereo_v1.2
-LibName93=lib/mitch_exported

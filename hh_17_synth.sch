@@ -295,9 +295,9 @@ $EndComp
 Text Label 13065 1540 0    60   ~ 0
 VBUS
 Text Label 12940 1840 0    60   ~ 0
-USB_DM
+USB_D_N
 Text Label 12940 1740 0    60   ~ 0
-USB_DP
+USB_D_P
 NoConn ~ 12715 1940
 $Comp
 L C_Small C2
@@ -366,9 +366,9 @@ F 3 "" H 12365 2365 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 11710 4885 0    60   ~ 0
-USB_DM
+USB_D_N
 Text Label 11710 4985 0    60   ~ 0
-USB_DP
+USB_D_P
 $Comp
 L LM1117-3.3 U1
 U 1 1 589F57A1
@@ -419,7 +419,7 @@ F 3 "" H 14870 3155 50  0001 C CNN
 $EndComp
 Text Label 14020 2955 0    60   ~ 0
 BOOT0
-Text Label 15330 2940 0    60   ~ 0
+Text Label 15345 2955 0    60   ~ 0
 VDD
 $Comp
 L R R1
@@ -484,7 +484,7 @@ DAC_C1
 Text Label 11710 4285 0    60   ~ 0
 DAC_C2
 Text Notes 5060 6525 0    60   ~ 0
-will not need an audio amplifier\nmcu has built in buffer driver\n0.2V to Vdd-0.3V
+will not need an audio amplifier\nat least for headphones\nmcu has built in buffer driver\n0.2V to Vdd-0.3V
 $Comp
 L JACK_TRS J3
 U 1 1 58A5E699
@@ -493,6 +493,9 @@ F 0 "J3" H 6875 6790 50  0000 C CNN
 F 1 "JACK_TRS" H 6835 7300 50  0000 L CNN
 F 2 "custom:Tayda_3.5mm_stereo_TRS_jack_A-853" H 7235 7020 50  0001 C CNN
 F 3 "" H 7235 7020 50  0000 C CNN
+F 4 "http://www.taydaelectronics.com/review/product/list/id/2876/" H 7235 7020 60  0001 C CNN "Mfg_Part_No"
+F 5 "tayda electronics" H 7235 7020 60  0001 C CNN "Manufacturer"
+F 6 "490-SJ1-3525N  mouser" H 7235 7020 60  0001 C CNN "alternate"
 	1    7235 7020
 	-1   0    0    1   
 $EndComp
@@ -509,9 +512,9 @@ F 3 "" H 6460 7360 50  0001 C CNN
 	1    6460 7360
 	1    0    0    -1  
 $EndComp
-Text Label 3530 7535 2    60   ~ 0
-DAC_C2
 Text Label 3555 6860 2    60   ~ 0
+DAC_C2
+Text Label 3530 7535 2    60   ~ 0
 DAC_C1
 $Comp
 L C C8
@@ -639,7 +642,7 @@ Connection ~ 14420 2955
 Wire Wire Line
 	14420 3080 14420 2955
 Wire Wire Line
-	15330 2940 15055 2940
+	15345 2955 15070 2955
 Wire Wire Line
 	14020 2955 14670 2955
 Connection ~ 14920 1900
@@ -1040,4 +1043,6 @@ Text Notes 3135 8480 0    60   ~ 0
 TODO: verify lpf
 Text Notes 13700 2725 0    60   ~ 0
 TODO: choose button and verify button footprint
+Text Notes 1040 5175 0    60   ~ 0
+TODO\n=====\nbattery connector?\nspeaker connecter/audio amp?\npotentiometers?\nrf module?
 $EndSCHEMATC
