@@ -1044,5 +1044,5 @@ TODO: verify lpf
 Text Notes 13700 2725 0    60   ~ 0
 TODO: choose button and verify button footprint
 Text Notes 1040 5175 0    60   ~ 0
-TODO\n=====\nbattery connector?\nspeaker connecter/audio amp?\npotentiometers?\nrf module?
+TODO\n=====\nbattery connector\n2 potentiometers
 $EndSCHEMATC
