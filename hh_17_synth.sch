@@ -2,95 +2,7 @@ EESchema Schematic File Version 2
 LIBS:hh_17_synth-rescue
 LIBS:power
 LIBS:device
-LIBS:transistors
 LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:STM32F072RxTx
-LIBS:74xgxx
-LIBS:Altera
-LIBS:ESD_Protection
-LIBS:Lattice
-LIBS:Oscillators
-LIBS:Power_Management
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:Zilog
-LIBS:ac-dc
-LIBS:actel
-LIBS:allegro
-LIBS:analog_devices
-LIBS:battery_management
-LIBS:bbd
-LIBS:bosch
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:dc-dc
-LIBS:diode
-LIBS:elec-unifil
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic
-LIBS:hc11
-LIBS:ir
-LIBS:logo
-LIBS:maxim
-LIBS:mechanical
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:motor_drivers
-LIBS:motors
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:powerint
-LIBS:pspice
-LIBS:references
-LIBS:relays
-LIBS:rfcom
-LIBS:sensors
-LIBS:silabs
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:transf
-LIBS:triac_thyristor
-LIBS:ttl_ieee
-LIBS:video
-LIBS:wiznet
-LIBS:zetex
-LIBS:JACK_TRS
-LIBS:ArduTouch_stereo_v1.2
 LIBS:hh_17_synth-cache
 EELAYER 25 0
 EELAYER END
@@ -595,6 +507,179 @@ F 3 "" H 3875 7535 50  0001 C CNN
 	1    3875 7535
 	0    1    1    0   
 $EndComp
+Text Label 3435 2885 0    60   ~ 0
+VDD
+$Comp
+L GND #PWR014
+U 1 1 58A76E2B
+P 7635 5875
+F 0 "#PWR014" H 7635 5625 50  0001 C CNN
+F 1 "GND" H 7635 5725 50  0000 C CNN
+F 2 "" H 7635 5875 50  0001 C CNN
+F 3 "" H 7635 5875 50  0001 C CNN
+	1    7635 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F072CBTx U2
+U 1 1 58A74415
+P 7685 3885
+F 0 "U2" H 3985 5710 50  0000 L BNN
+F 1 "STM32F072CBTx" H 11385 5710 50  0000 R BNN
+F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 11385 5660 50  0001 R TNN
+F 3 "" H 7685 3885 50  0001 C CNN
+	1    7685 3885
+	1    0    0    -1  
+$EndComp
+Text Label 11715 5085 0    60   ~ 0
+SWDIO
+$Comp
+L MITCH-PARTS_PCB-KEYBOARD2 KB1
+U 1 1 58A88168
+P 12205 7665
+F 0 "KB1" V 10880 7315 45  0000 L BNN
+F 1 "MITCH-PARTS_PCB-KEYBOARD2" V 12205 7665 45  0001 L BNN
+F 2 "custom:MITCH-PARTS_PCB-KEYBOARD2_kicad_fix" H 12235 7815 20  0001 C CNN
+F 3 "" H 12205 7665 60  0001 C CNN
+	1    12205 7665
+	1    0    0    -1  
+$EndComp
+$Comp
+L MITCH-PARTS_PCB-TOUCHPAD2 TOUCH1
+U 1 1 58A8CBB1
+P 11200 8825
+F 0 "TOUCH1" H 10850 8925 45  0000 L BNN
+F 1 "MITCH-PARTS_PCB-TOUCHPAD2" H 11350 8925 45  0000 L BNN
+F 2 "custom:MITCH-PARTS_PCB-TOUCHPAD2_kicad_fix" H 11230 8975 20  0001 C CNN
+F 3 "" H 11200 8825 60  0001 C CNN
+	1    11200 8825
+	1    0    0    -1  
+$EndComp
+$Comp
+L MITCH-PARTS_PCB-TOUCHPAD2 TOUCH2
+U 1 1 58A8CCDE
+P 13265 8855
+F 0 "TOUCH2" H 12915 8955 45  0000 L BNN
+F 1 "MITCH-PARTS_PCB-TOUCHPAD2" H 13415 8955 45  0000 L BNN
+F 2 "custom:MITCH-PARTS_PCB-TOUCHPAD2_kicad_fix" H 13295 9005 20  0001 C CNN
+F 3 "" H 13265 8855 60  0001 C CNN
+	1    13265 8855
+	1    0    0    -1  
+$EndComp
+Text Label 11680 3785 0    60   ~ 0
+C
+Text Label 11685 3885 0    60   ~ 0
+C#
+Text Label 11680 3985 0    60   ~ 0
+D
+Text Label 11680 4085 0    60   ~ 0
+D#
+Text Label 11005 7085 0    60   ~ 0
+C
+Text Label 11205 7075 0    60   ~ 0
+C#
+Text Label 11405 6955 0    60   ~ 0
+D
+Text Label 11505 7080 0    60   ~ 0
+D#
+Text Label 11680 4385 0    60   ~ 0
+E
+Text Label 11675 4485 0    60   ~ 0
+F
+Text Label 11805 7105 0    60   ~ 0
+E
+Text Label 12005 7095 0    60   ~ 0
+F
+Text Label 11670 4685 0    60   ~ 0
+F#
+Text Label 11670 4785 0    60   ~ 0
+G
+Text Label 12205 6915 0    60   ~ 0
+F#
+Text Label 12305 6995 0    60   ~ 0
+G
+Text Label 3565 3785 0    60   ~ 0
+G#
+Text Label 3565 3885 0    60   ~ 0
+A
+Text Label 3560 3985 0    60   ~ 0
+A#
+Text Label 12505 7100 0    60   ~ 0
+G#
+Text Label 12705 6985 0    60   ~ 0
+A
+Text Label 12805 7105 0    60   ~ 0
+A#
+Text Label 13105 7080 0    60   ~ 0
+B
+Text Label 13205 7080 0    60   ~ 0
+C+
+Text Label 3560 4085 0    60   ~ 0
+B
+Text Label 3560 4185 0    60   ~ 0
+C+
+$Comp
+L GND #PWR015
+U 1 1 58A9B332
+P 11565 8905
+F 0 "#PWR015" H 11565 8655 50  0001 C CNN
+F 1 "GND" H 11565 8755 50  0000 C CNN
+F 2 "" H 11565 8905 50  0001 C CNN
+F 3 "" H 11565 8905 50  0001 C CNN
+	1    11565 8905
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 58A9B570
+P 13600 8970
+F 0 "#PWR016" H 13600 8720 50  0001 C CNN
+F 1 "GND" H 13600 8820 50  0000 C CNN
+F 2 "" H 13600 8970 50  0001 C CNN
+F 3 "" H 13600 8970 50  0001 C CNN
+	1    13600 8970
+	1    0    0    -1  
+$EndComp
+Text Label 3575 4385 0    60   ~ 0
+TB1
+Text Label 3575 4485 0    60   ~ 0
+TB2
+Text Label 10715 8825 0    60   ~ 0
+TB1
+Text Label 12865 8855 0    60   ~ 0
+TB2
+$Comp
+L CP1 C6
+U 1 1 58A9EF73
+P 4205 7820
+F 0 "C6" H 4230 7920 50  0000 L CNN
+F 1 "1uF" H 4230 7720 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.00mm" H 4243 7670 50  0001 C CNN
+F 3 "" H 4205 7820 50  0001 C CNN
+F 4 "105CKR050M" H 4205 7820 60  0001 C CNN "Mfg_Part_No"
+F 5 "Cornell Dubilier" H 4205 7820 60  0001 C CNN "Manufacturer"
+	1    4205 7820
+	1    0    0    -1  
+$EndComp
+Text Notes 13440 6335 0    60   ~ 0
+TODO: verify load capacitance, fix crystal
+Text Notes 3135 8480 0    60   ~ 0
+TODO: verify lpf
+Text Notes 13700 2725 0    60   ~ 0
+TODO: choose button and verify button footprint
+Text Notes 1040 5175 0    60   ~ 0
+TODO\n=====\nbattery connector\n2 potentiometers
+$Comp
+L PWR_FLAG #FLG017
+U 1 1 58AAD788
+P 12795 1490
+F 0 "#FLG017" H 12795 1565 50  0001 C CNN
+F 1 "PWR_FLAG" H 12795 1640 50  0001 C CNN
+F 2 "" H 12795 1490 50  0001 C CNN
+F 3 "" H 12795 1490 50  0001 C CNN
+	1    12795 1490
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	3440 2485 3885 2485
 Wire Wire Line
@@ -756,21 +841,8 @@ Wire Wire Line
 	11485 4185 11710 4185
 Wire Wire Line
 	11710 4285 11485 4285
-Text Label 3435 2885 0    60   ~ 0
-VDD
 Wire Wire Line
 	3435 2885 3885 2885
-$Comp
-L GND #PWR014
-U 1 1 58A76E2B
-P 7635 5875
-F 0 "#PWR014" H 7635 5625 50  0001 C CNN
-F 1 "GND" H 7635 5725 50  0000 C CNN
-F 2 "" H 7635 5875 50  0001 C CNN
-F 3 "" H 7635 5875 50  0001 C CNN
-	1    7635 5875
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7485 5685 7485 5785
 Wire Wire Line
@@ -790,17 +862,6 @@ Wire Wire Line
 	7685 1725 7685 1985
 Wire Wire Line
 	7685 1725 8330 1725
-$Comp
-L STM32F072CBTx U2
-U 1 1 58A74415
-P 7685 3885
-F 0 "U2" H 3985 5710 50  0000 L BNN
-F 1 "STM32F072CBTx" H 11385 5710 50  0000 R BNN
-F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 11385 5660 50  0001 R TNN
-F 3 "" H 7685 3885 50  0001 C CNN
-	1    7685 3885
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8905 1870 8905 1670
 Wire Wire Line
@@ -826,53 +887,10 @@ Wire Wire Line
 	11710 4885 11485 4885
 Wire Wire Line
 	11710 4985 11485 4985
-Text Label 11715 5085 0    60   ~ 0
-SWDIO
 Wire Wire Line
 	11715 5085 11485 5085
 Wire Wire Line
 	11715 5185 11485 5185
-$Comp
-L MITCH-PARTS_PCB-KEYBOARD2 KB1
-U 1 1 58A88168
-P 12205 7665
-F 0 "KB1" V 10880 7315 45  0000 L BNN
-F 1 "MITCH-PARTS_PCB-KEYBOARD2" V 12205 7665 45  0001 L BNN
-F 2 "custom:MITCH-PARTS_PCB-KEYBOARD2_kicad_fix" H 12235 7815 20  0001 C CNN
-F 3 "" H 12205 7665 60  0001 C CNN
-	1    12205 7665
-	1    0    0    -1  
-$EndComp
-$Comp
-L MITCH-PARTS_PCB-TOUCHPAD2 TOUCH1
-U 1 1 58A8CBB1
-P 11200 8825
-F 0 "TOUCH1" H 10850 8925 45  0000 L BNN
-F 1 "MITCH-PARTS_PCB-TOUCHPAD2" H 11350 8925 45  0000 L BNN
-F 2 "custom:MITCH-PARTS_PCB-TOUCHPAD2_kicad_fix" H 11230 8975 20  0001 C CNN
-F 3 "" H 11200 8825 60  0001 C CNN
-	1    11200 8825
-	1    0    0    -1  
-$EndComp
-$Comp
-L MITCH-PARTS_PCB-TOUCHPAD2 TOUCH2
-U 1 1 58A8CCDE
-P 13265 8855
-F 0 "TOUCH2" H 12915 8955 45  0000 L BNN
-F 1 "MITCH-PARTS_PCB-TOUCHPAD2" H 13415 8955 45  0000 L BNN
-F 2 "custom:MITCH-PARTS_PCB-TOUCHPAD2_kicad_fix" H 13295 9005 20  0001 C CNN
-F 3 "" H 13265 8855 60  0001 C CNN
-	1    13265 8855
-	1    0    0    -1  
-$EndComp
-Text Label 11680 3785 0    60   ~ 0
-C
-Text Label 11685 3885 0    60   ~ 0
-C#
-Text Label 11680 3985 0    60   ~ 0
-D
-Text Label 11680 4085 0    60   ~ 0
-D#
 Wire Wire Line
 	11485 4085 11680 4085
 Wire Wire Line
@@ -881,138 +899,64 @@ Wire Wire Line
 	11485 3885 11685 3885
 Wire Wire Line
 	11680 3785 11485 3785
-Text Label 11005 7085 0    60   ~ 0
-C
 Wire Wire Line
 	11005 7085 11005 7165
-Text Label 11205 7075 0    60   ~ 0
-C#
 Wire Wire Line
 	11205 7075 11205 7165
-Text Label 11405 6955 0    60   ~ 0
-D
 Wire Wire Line
 	11405 6955 11405 7065
-Text Label 11505 7080 0    60   ~ 0
-D#
 Wire Wire Line
 	11505 7080 11505 7165
-Text Label 11680 4385 0    60   ~ 0
-E
-Text Label 11675 4485 0    60   ~ 0
-F
 Wire Wire Line
 	11675 4485 11485 4485
 Wire Wire Line
 	11680 4385 11485 4385
-Text Label 11805 7105 0    60   ~ 0
-E
 Wire Wire Line
 	11805 7105 11805 7165
-Text Label 12005 7095 0    60   ~ 0
-F
 Wire Wire Line
 	12005 7095 12005 7165
-Text Label 11670 4685 0    60   ~ 0
-F#
 Wire Wire Line
 	11670 4685 11485 4685
-Text Label 11670 4785 0    60   ~ 0
-G
 Wire Wire Line
 	11670 4785 11485 4785
-Text Label 12205 6915 0    60   ~ 0
-F#
 Wire Wire Line
 	12205 6915 12205 7165
-Text Label 12305 6995 0    60   ~ 0
-G
 Wire Wire Line
 	12305 6995 12305 7065
-Text Label 3565 3785 0    60   ~ 0
-G#
-Text Label 3565 3885 0    60   ~ 0
-A
-Text Label 3560 3985 0    60   ~ 0
-A#
 Wire Wire Line
 	3560 3985 3885 3985
 Wire Wire Line
 	3885 3885 3565 3885
 Wire Wire Line
 	3565 3785 3885 3785
-Text Label 12505 7100 0    60   ~ 0
-G#
 Wire Wire Line
 	12505 7100 12505 7165
-Text Label 12705 6985 0    60   ~ 0
-A
 Wire Wire Line
 	12705 6985 12705 7065
-Text Label 12805 7105 0    60   ~ 0
-A#
 Wire Wire Line
 	12805 7105 12805 7165
-Text Label 13105 7080 0    60   ~ 0
-B
-Text Label 13205 7080 0    60   ~ 0
-C+
 Wire Wire Line
 	13105 7080 13105 7165
 Wire Wire Line
 	13205 7165 13205 7080
-Text Label 3560 4085 0    60   ~ 0
-B
-Text Label 3560 4185 0    60   ~ 0
-C+
 Wire Wire Line
 	3560 4185 3885 4185
 Wire Wire Line
 	3885 4085 3560 4085
-$Comp
-L GND #PWR015
-U 1 1 58A9B332
-P 11565 8905
-F 0 "#PWR015" H 11565 8655 50  0001 C CNN
-F 1 "GND" H 11565 8755 50  0000 C CNN
-F 2 "" H 11565 8905 50  0001 C CNN
-F 3 "" H 11565 8905 50  0001 C CNN
-	1    11565 8905
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11450 8825 11565 8825
 Wire Wire Line
 	11565 8825 11565 8905
-$Comp
-L GND #PWR016
-U 1 1 58A9B570
-P 13600 8970
-F 0 "#PWR016" H 13600 8720 50  0001 C CNN
-F 1 "GND" H 13600 8820 50  0000 C CNN
-F 2 "" H 13600 8970 50  0001 C CNN
-F 3 "" H 13600 8970 50  0001 C CNN
-	1    13600 8970
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13600 8970 13600 8855
 Wire Wire Line
 	13600 8855 13515 8855
-Text Label 3575 4385 0    60   ~ 0
-TB1
-Text Label 3575 4485 0    60   ~ 0
-TB2
 Wire Wire Line
 	3575 4485 3885 4485
 Wire Wire Line
 	3575 4385 3885 4385
-Text Label 10715 8825 0    60   ~ 0
-TB1
 Wire Wire Line
 	10715 8825 10950 8825
-Text Label 12865 8855 0    60   ~ 0
-TB2
 Wire Wire Line
 	13015 8855 12865 8855
 Wire Wire Line
@@ -1024,25 +968,7 @@ Wire Wire Line
 Wire Wire Line
 	4205 6860 4205 6945
 Connection ~ 4205 6860
-$Comp
-L CP1 C6
-U 1 1 58A9EF73
-P 4205 7820
-F 0 "C6" H 4230 7920 50  0000 L CNN
-F 1 "1uF" H 4230 7720 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.00mm" H 4243 7670 50  0001 C CNN
-F 3 "" H 4205 7820 50  0001 C CNN
-F 4 "105CKR050M" H 4205 7820 60  0001 C CNN "Mfg_Part_No"
-F 5 "Cornell Dubilier" H 4205 7820 60  0001 C CNN "Manufacturer"
-	1    4205 7820
-	1    0    0    -1  
-$EndComp
-Text Notes 13440 6335 0    60   ~ 0
-TODO: verify load capacitance, fix crystal
-Text Notes 3135 8480 0    60   ~ 0
-TODO: verify lpf
-Text Notes 13700 2725 0    60   ~ 0
-TODO: choose button and verify button footprint
-Text Notes 1040 5175 0    60   ~ 0
-TODO\n=====\nbattery connector\n2 potentiometers
+Wire Wire Line
+	12795 1490 12795 1540
+Connection ~ 12795 1540
 $EndSCHEMATC
