@@ -6,11 +6,7 @@ Based around stm32f072 (48 pin) and used capacitive touch footprints from https:
 TODO
 ----
 
-* add potentiometers
-
-* add some packet radio?
-
-* fix sources for each part
+* add battery connector
 
 * verify crystal loading caps acc. to crystal, rc lpf passives values
 

@@ -654,8 +654,6 @@ Text Notes 3560 6640 0    60   ~ 0
 TODO: verify lpf
 Text Notes 13700 2725 0    60   ~ 0
 TODO: choose button and verify button footprint
-Text Notes 1040 5175 0    60   ~ 0
-TODO\n=====\nbattery connector
 $Comp
 L PWR_FLAG #FLG017
 U 1 1 58AAD788
