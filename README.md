@@ -11,3 +11,6 @@ TODO
 * verify crystal loading caps acc. to crystal, rc lpf passives values
 
 * firmware
+
+
+![Hillhacks '17 badge](3d_view.png)
