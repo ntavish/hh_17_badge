@@ -314,10 +314,10 @@ F 3 "" H 14920 1975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_Push BOOT
+L SW_Push BOOT1
 U 1 1 58A098BF
 P 14870 2955
-F 0 "BOOT" H 14920 3055 50  0000 L CNN
+F 0 "BOOT1" H 14920 3055 50  0000 L CNN
 F 1 "SW_Push" H 14870 2895 50  0000 C CNN
 F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 14870 3155 50  0001 C CNN
 F 3 "" H 14870 3155 50  0001 C CNN
@@ -550,10 +550,6 @@ Text Label 10715 8825 0    60   ~ 0
 TB1
 Text Label 12865 8855 0    60   ~ 0
 TB2
-Text Notes 13440 6335 0    60   ~ 0
-TODO: verify load capacitance, fix crystal
-Text Notes 13700 2725 0    60   ~ 0
-TODO: choose button and verify button footprint
 $Comp
 L PWR_FLAG #FLG015
 U 1 1 58AAD788
@@ -1162,7 +1158,7 @@ U 1 1 58FCD0EF
 P 2605 7150
 F 0 "C5" H 2615 7220 50  0000 L CNN
 F 1 "100uF" V 2645 6880 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 2605 7150 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 2605 7150 50  0001 C CNN
 F 3 "" H 2605 7150 50  0001 C CNN
 	1    2605 7150
 	0    1    -1   0   
@@ -1173,7 +1169,7 @@ U 1 1 58FCD303
 P 2605 7450
 F 0 "C6" H 2615 7520 50  0000 L CNN
 F 1 "100uF" V 2645 7185 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 2605 7450 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 2605 7450 50  0001 C CNN
 F 3 "" H 2605 7450 50  0001 C CNN
 	1    2605 7450
 	0    1    -1   0   
@@ -1192,7 +1188,7 @@ U 1 1 58FD40DF
 P 4515 6770
 F 0 "C7" H 4525 6840 50  0000 L CNN
 F 1 "470uF" V 4430 6845 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 4515 6770 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 4515 6770 50  0001 C CNN
 F 3 "" H 4515 6770 50  0001 C CNN
 	1    4515 6770
 	0    -1   1    0   
@@ -1203,7 +1199,7 @@ U 1 1 58FD57FB
 P 4520 7450
 F 0 "C8" H 4530 7520 50  0000 L CNN
 F 1 "470uF" V 4440 7515 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 4520 7450 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 4520 7450 50  0001 C CNN
 F 3 "" H 4520 7450 50  0001 C CNN
 	1    4520 7450
 	0    -1   1    0   
@@ -1492,7 +1488,7 @@ U 1 1 58FEEA3F
 P 3660 4585
 F 0 "J4" H 3660 4855 50  0000 C CNN
 F 1 "SCL" V 3720 4655 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 3860 4585 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 3860 4585 50  0001 C CNN
 F 3 "" H 3860 4585 50  0001 C CNN
 	1    3660 4585
 	0    -1   -1   0   
@@ -1503,7 +1499,7 @@ U 1 1 58FEEC92
 P 3660 4685
 F 0 "J5" H 3660 4955 50  0000 C CNN
 F 1 "SDA" V 3585 4870 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 3860 4685 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 3860 4685 50  0001 C CNN
 F 3 "" H 3860 4685 50  0001 C CNN
 	1    3660 4685
 	0    -1   -1   0   
