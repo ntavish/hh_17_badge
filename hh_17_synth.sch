@@ -9,8 +9,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Hillhacks 2017 badge"
-Date "2017-02-11"
-Rev ""
+Date "2017-04-24"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
